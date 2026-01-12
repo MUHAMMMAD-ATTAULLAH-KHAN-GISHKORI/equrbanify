@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Buy premium Halal livestock for Qurbani. Browse Red Sindhi cattle, Beetal goats, Kachhi sheep, and camels. 100% vet-verified animals.">
+    <meta name="keywords" content="Buy Qurbani Animals, Online Bakra Pakistan, Halal Cattle Sale, Buy Goat Online Pakistan">
+    <title>Shop Qurbani Animals | e-Qurbanify</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <h1>e-Qurbanify</h1>
+                        <span class="logo-tagline">حلال و طیب</span>
+                    </a>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html" class="active">Shop Animals</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="login.html" class="auth-nav-btn login-btn" id="loginNavBtn">Login</a>
+                    <a href="signup.html" class="auth-nav-btn signup-btn" id="signupNavBtn">Sign Up</a>
+                    <button class="currency-toggle" id="currencyToggle">PKR</button>
+                    <a href="#" class="cart-icon" id="cartIcon">
+                        🛒 <span class="cart-count" id="cartCount">0</span>
+                    </a>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">☰</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Shop Qurbani Animals</h1>
+            <p>Select from 100% Halal, vet-verified livestock</p>
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section class="shop-section">
+        <div class="container">
+            <div class="shop-layout">
+                <!-- Filters Sidebar -->
+                <aside class="filters-sidebar">
+                    <div class="filter-group">
+                        <h3>Animal Category</h3>
+                        <label class="filter-option">
+                            <input type="checkbox" name="category" value="all" checked>
+                            <span>All Animals</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="category" value="cattle">
+                            <span>Cattle (گائے/بیل)</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="category" value="goats">
+                            <span>Goats (بکرا)</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="category" value="sheep">
+                            <span>Sheep (بھیڑ)</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="category" value="camels">
+                            <span>Camels (اونٹ)</span>
+                        </label>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Breed</h3>
+                        <label class="filter-option">
+                            <input type="checkbox" name="breed" value="red-sindhi">
+                            <span>Red Sindhi</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="breed" value="sahiwal">
+                            <span>Sahiwal</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="breed" value="cholistani">
+                            <span>Cholistani</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="breed" value="beetal">
+                            <span>Beetal</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="breed" value="teddy">
+                            <span>Teddy</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="breed" value="kamori">
+                            <span>Kamori</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="breed" value="kachhi">
+                            <span>Kachhi</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="breed" value="lohi">
+                            <span>Lohi</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="breed" value="harnai">
+                            <span>Harnai</span>
+                        </label>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Weight Range</h3>
+                        <label class="filter-option">
+                            <input type="checkbox" name="weight" value="30-50">
+                            <span>30-50 kg</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="weight" value="50-100">
+                            <span>50-100 kg</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="weight" value="100-200">
+                            <span>100-200 kg</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="weight" value="200-400">
+                            <span>200-400 kg</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="weight" value="400+">
+                            <span>400+ kg</span>
+                        </label>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Price Range (PKR)</h3>
+                        <label class="filter-option">
+                            <input type="checkbox" name="price" value="0-50000">
+                            <span>Under 50,000</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="price" value="50000-100000">
+                            <span>50,000 - 100,000</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="price" value="100000-200000">
+                            <span>100,000 - 200,000</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="price" value="200000-300000">
+                            <span>200,000 - 300,000</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="price" value="300000+">
+                            <span>300,000+</span>
+                        </label>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Qurbani Eligibility</h3>
+                        <label class="filter-option">
+                            <input type="checkbox" name="qurbani" value="eligible" checked>
+                            <span>✓ Qurbani Eligible</span>
+                        </label>
+                    </div>
+
+                    <button class="btn btn-secondary btn-block" id="resetFilters">Reset Filters</button>
+                </aside>
+
+                <!-- Products Grid -->
+                <div class="products-main">
+                    <div class="products-header">
+                        <p class="results-count">Showing <strong id="resultsCount">12</strong> animals</p>
+                        <select class="sort-select" id="sortSelect">
+                            <option value="featured">Featured</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="weight-low">Weight: Low to High</option>
+                            <option value="weight-high">Weight: High to Low</option>
+                        </select>
+                    </div>
+
+                    <div class="products-grid" id="productsGrid">
+                        <!-- Cattle Products -->
+                        <div class="product-card" data-category="cattle" data-breed="red-sindhi" data-weight="350" data-price="180000">
+                            <div class="product-badge qurbani-eligible">✓ Qurbani Eligible</div>
+                            <div class="product-image-slider" data-product="1">
+                                <img class="slider-image active" src="images/products/red-sindhi-1.jpg" alt="Red Sindhi Front">
+                                <img class="slider-image" src="images/products/red-sindhi-2.jpg" alt="Red Sindhi Back">
+                                <img class="slider-image" src="images/products/red-sindhi-3.jpg" alt="Red Sindhi Side">
+                                <button class="slider-btn prev" onclick="changeProductImage(1, -1)">‹</button>
+                                <button class="slider-btn next" onclick="changeProductImage(1, 1)">›</button>
+                                <div class="slider-dots">
+                                    <span class="dot active" onclick="setProductImage(1, 0)">•</span>
+                                    <span class="dot" onclick="setProductImage(1, 1)">•</span>
+                                    <span class="dot" onclick="setProductImage(1, 2)">•</span>
+                                </div>
+                                <div class="product-overlay">
+                                    <a href="product-detail.html?id=1" class="btn btn-primary">View Details</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Premium Red Sindhi Cattle</h3>
+                                <p class="product-breed">Breed: Red Sindhi • گائے</p>
+                                <div class="product-specs">
+                                    <span>📍 Karachi</span>
+                                    <span>⚖️ 350 kg</span>
+                                    <span>🦷 4 Teeth</span>
+                                </div>
+                                <div class="product-footer">
+                                    <div class="product-price">
+                                        <span class="price-label">Price:</span>
+                                        <span class="price-amount">PKR 180,000</span>
+                                    </div>
+                                    <button class="btn-add-cart" onclick="addToCart(1)">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="cattle" data-breed="sahiwal" data-weight="320" data-price="165000">
+                            <div class="product-badge qurbani-eligible">✓ Qurbani Eligible</div>
+                            <div class="product-image-slider" data-product="2">
+                                <img class="slider-image active" src="images/products/sahiwal Front View.jpg" alt="Sahiwal Front">
+                                <img class="slider-image" src="images/products/sahiwal back View.jpg" alt="Sahiwal Back">
+                                <img class="slider-image" src="images/products/sahiwal side View.jpg" alt="Sahiwal Side">
+                                <button class="slider-btn prev" onclick="changeProductImage(2, -1)">‹</button>
+                                <button class="slider-btn next" onclick="changeProductImage(2, 1)">›</button>
+                                <div class="slider-dots">
+                                    <span class="dot active" onclick="setProductImage(2, 0)">•</span>
+                                    <span class="dot" onclick="setProductImage(2, 1)">•</span>
+                                    <span class="dot" onclick="setProductImage(2, 2)">•</span>
+                                </div>
+                                <div class="product-overlay">
+                                    <a href="product-detail.html?id=2" class="btn btn-primary">View Details</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Sahiwal Bull</h3>
+                                <p class="product-breed">Breed: Sahiwal • بیل</p>
+                                <div class="product-specs">
+                                    <span>📍 Lahore</span>
+                                    <span>⚖️ 320 kg</span>
+                                    <span>🦷 Donda</span>
+                                </div>
+                                <div class="product-footer">
+                                    <div class="product-price">
+                                        <span class="price-label">Price:</span>
+                                        <span class="price-amount">PKR 165,000</span>
+                                    </div>
+                                    <button class="btn-add-cart" onclick="addToCart(2)">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="cattle" data-breed="cholistani" data-weight="380" data-price="195000">
+                            <div class="product-badge qurbani-eligible">✓ Qurbani Eligible</div>
+                            <div class="product-image-slider" data-product="3">
+                                <img class="slider-image active" src="images/products/Cholistani Front View.jpg" alt="Cholistani Front">
+                                <img class="slider-image" src="images/products/Cholistani back View.jpg" alt="Cholistani Back">
+                                <img class="slider-image" src="images/products/Cholistani side View.jpg" alt="Cholistani Side">
+                                <button class="slider-btn prev" onclick="changeProductImage(3, -1)">‹</button>
+                                <button class="slider-btn next" onclick="changeProductImage(3, 1)">›</button>
+                                <div class="slider-dots">
+                                    <span class="dot active" onclick="setProductImage(3, 0)">•</span>
+                                    <span class="dot" onclick="setProductImage(3, 1)">•</span>
+                                    <span class="dot" onclick="setProductImage(3, 2)">•</span>
+                                </div>
+                                <div class="product-overlay">
+                                    <a href="product-detail.html?id=3" class="btn btn-primary">View Details</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Cholistani Bull</h3>
+                                <p class="product-breed">Breed: Cholistani • بیل</p>
+                                <div class="product-specs">
+                                    <span>📍 Multan</span>
+                                    <span>⚖️ 380 kg</span>
+                                    <span>🦷 6 Teeth</span>
+                                </div>
+                                <div class="product-footer">
+                                    <div class="product-price">
+                                        <span class="price-label">Price:</span>
+                                        <span class="price-amount">PKR 195,000</span>
+                                    </div>
+                                    <button class="btn-add-cart" onclick="addToCart(3)">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Goat Products -->
+                        <div class="product-card" data-category="goats" data-breed="beetal" data-weight="55" data-price="45000">
+                            <div class="product-badge qurbani-eligible">✓ Qurbani Eligible</div>
+                            <div class="product-image-slider" data-product="4">
+                                <img class="slider-image active" src="images/products/Beetal Goat Front View.jpg" alt="Beetal Front">
+                                <img class="slider-image" src="images/products/Beetal Goat back View.jpg" alt="Beetal Back">
+                                <img class="slider-image" src="images/products/Beetal Goat side View.jpg" alt="Beetal Side">
+                                <button class="slider-btn prev" onclick="changeProductImage(4, -1)">‹</button>
+                                <button class="slider-btn next" onclick="changeProductImage(4, 1)">›</button>
+                                <div class="slider-dots">
+                                    <span class="dot active" onclick="setProductImage(4, 0)">•</span>
+                                    <span class="dot" onclick="setProductImage(4, 1)">•</span>
+                                    <span class="dot" onclick="setProductImage(4, 2)">•</span>
+                                </div>
+                                <div class="product-overlay">
+                                    <a href="product-detail.html?id=4" class="btn btn-primary">View Details</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Premium Beetal Goat</h3>
+                                <p class="product-breed">Breed: Beetal • بکرا</p>
+                                <div class="product-specs">
+                                    <span>📍 Lahore</span>
+                                    <span>⚖️ 55 kg</span>
+                                    <span>🦷 2 Teeth</span>
+                                </div>
+                                <div class="product-footer">
+                                    <div class="product-price">
+                                        <span class="price-label">Price:</span>
+                                        <span class="price-amount">PKR 45,000</span>
+                                    </div>
+                                    <button class="btn-add-cart" onclick="addToCart(4)">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="goats" data-breed="teddy" data-weight="48" data-price="38000">
+                            <div class="product-badge qurbani-eligible">✓ Qurbani Eligible</div>
+                            <div class="product-image-slider" data-product="5">
+                                <img class="slider-image active" src="images/products/Teddy Goat Front View.jpg" alt="Teddy Front">
+                                <img class="slider-image" src="images/products/Teddy Goat back View.jpg" alt="Teddy Back">
+                                <img class="slider-image" src="images/products/Teddy Goat side View.jpg" alt="Teddy Side">
+                                <button class="slider-btn prev" onclick="changeProductImage(5, -1)">‹</button>
+                                <button class="slider-btn next" onclick="changeProductImage(5, 1)">›</button>
+                                <div class="slider-dots">
+                                    <span class="dot active" onclick="setProductImage(5, 0)">•</span>
+                                    <span class="dot" onclick="setProductImage(5, 1)">•</span>
+                                    <span class="dot" onclick="setProductImage(5, 2)">•</span>
+                                </div>
+                                <div class="product-overlay">
+                                    <a href="product-detail.html?id=5" class="btn btn-primary">View Details</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Teddy Goat</h3>
+                                <p class="product-breed">Breed: Teddy • بکرا</p>
+                                <div class="product-specs">
+                                    <span>📍 Faisalabad</span>
+                                    <span>⚖️ 48 kg</span>
+                                    <span>🦷 Donda</span>
+                                </div>
+                                <div class="product-footer">
+                                    <div class="product-price">
+                                        <span class="price-label">Price:</span>
+                                        <span class="price-amount">PKR 38,000</span>
+                                    </div>
+                                    <button class="btn-add-cart" onclick="addToCart(5)">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="goats" data-breed="kamori" data-weight="62" data-price="52000">
+                            <div class="product-badge qurbani-eligible">✓ Qurbani Eligible</div>
+                            <div class="product-image-slider" data-product="6">
+                                <img class="slider-image active" src="images/products/Kamori Goat Front View.jpg" alt="Kamori Front">
+                                <img class="slider-image" src="images/products/Kamori Goat back View.jpg" alt="Kamori Back">
+                                <img class="slider-image" src="images/products/Kamori Goat side View.jpg" alt="Kamori Side">
+                                <button class="slider-btn prev" onclick="changeProductImage(6, -1)">‹</button>
+                                <button class="slider-btn next" onclick="changeProductImage(6, 1)">›</button>
+                                <div class="slider-dots">
+                                    <span class="dot active" onclick="setProductImage(6, 0)">•</span>
+                                    <span class="dot" onclick="setProductImage(6, 1)">•</span>
+                                    <span class="dot" onclick="setProductImage(6, 2)">•</span>
+                                </div>
+                                <div class="product-overlay">
+                                    <a href="product-detail.html?id=6" class="btn btn-primary">View Details</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Kamori Goat</h3>
+                                <p class="product-breed">Breed: Kamori • بکرا</p>
+                                <div class="product-specs">
+                                    <span>📍 Hyderabad</span>
+                                    <span>⚖️ 62 kg</span>
+                                    <span>🦷 4 Teeth</span>
+                                </div>
+                                <div class="product-footer">
+                                    <div class="product-price">
+                                        <span class="price-label">Price:</span>
+                                        <span class="price-amount">PKR 52,000</span>
+                                    </div>
+                                    <button class="btn-add-cart" onclick="addToCart(6)">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sheep Products -->
+                        <div class="product-card" data-category="sheep" data-breed="kachhi" data-weight="45" data-price="42000">
+                            <div class="product-badge qurbani-eligible">✓ Qurbani Eligible</div>
+                            <div class="product-image-slider" data-product="7">
+                                <img class="slider-image active" src="images/products/Kachhi Sheep Front View.jpg" alt="Kachhi Front">
+                                <img class="slider-image" src="images/products/Kachhi Sheep back View.jpg" alt="Kachhi Back">
+                                <img class="slider-image" src="images/products/Kachhi Sheep side View.jpg" alt="Kachhi Side">
+                                <button class="slider-btn prev" onclick="changeProductImage(7, -1)">‹</button>
+                                <button class="slider-btn next" onclick="changeProductImage(7, 1)">›</button>
+                                <div class="slider-dots">
+                                    <span class="dot active" onclick="setProductImage(7, 0)">•</span>
+                                    <span class="dot" onclick="setProductImage(7, 1)">•</span>
+                                    <span class="dot" onclick="setProductImage(7, 2)">•</span>
+                                </div>
+                                <div class="product-overlay">
+                                    <a href="product-detail.html?id=7" class="btn btn-primary">View Details</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Kachhi Sheep</h3>
+                                <p class="product-breed">Breed: Kachhi • بھیڑ</p>
+                                <div class="product-specs">
+                                    <span>📍 Quetta</span>
+                                    <span>⚖️ 45 kg</span>
+                                    <span>🦷 2 Teeth</span>
+                                </div>
+                                <div class="product-footer">
+                                    <div class="product-price">
+                                        <span class="price-label">Price:</span>
+                                        <span class="price-amount">PKR 42,000</span>
+                                    </div>
+                                    <button class="btn-add-cart" onclick="addToCart(7)">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="sheep" data-breed="lohi" data-weight="52" data-price="48000">
+                            <div class="product-badge qurbani-eligible">✓ Qurbani Eligible</div>
+                            <div class="product-image-slider" data-product="8">
+                                <img class="slider-image active" src="images/products/Lohi Sheep Front View.jpg" alt="Lohi Front">
+                                <img class="slider-image" src="images/products/Lohi Sheep back View.jpg" alt="Lohi Back">
+                                <img class="slider-image" src="images/products/Lohi Sheep side View.jpg" alt="Lohi Side">
+                                <button class="slider-btn prev" onclick="changeProductImage(8, -1)">‹</button>
+                                <button class="slider-btn next" onclick="changeProductImage(8, 1)">›</button>
+                                <div class="slider-dots">
+                                    <span class="dot active" onclick="setProductImage(8, 0)">•</span>
+                                    <span class="dot" onclick="setProductImage(8, 1)">•</span>
+                                    <span class="dot" onclick="setProductImage(8, 2)">•</span>
+                                </div>
+                                <div class="product-overlay">
+                                    <a href="product-detail.html?id=8" class="btn btn-primary">View Details</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Lohi Sheep</h3>
+                                <p class="product-breed">Breed: Lohi • بھیڑ</p>
+                                <div class="product-specs">
+                                    <span>📍 Lahore</span>
+                                    <span>⚖️ 52 kg</span>
+                                    <span>🦷 Donda</span>
+                                </div>
+                                <div class="product-footer">
+                                    <div class="product-price">
+                                        <span class="price-label">Price:</span>
+                                        <span class="price-amount">PKR 48,000</span>
+                                    </div>
+                                    <button class="btn-add-cart" onclick="addToCart(8)">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="sheep" data-breed="harnai" data-weight="58" data-price="54000">
+                            <div class="product-badge qurbani-eligible">✓ Qurbani Eligible</div>
+                            <div class="product-image-slider" data-product="9">
+                                <img class="slider-image active" src="images/products/Harnai Sheep Front View.jpg" alt="Harnai Front">
+                                <img class="slider-image" src="images/products/Harnai Sheep back View.jpg" alt="Harnai Back">
+                                <img class="slider-image" src="images/products/Harnai Sheep side View.jpg" alt="Harnai Side">
+                                <button class="slider-btn prev" onclick="changeProductImage(9, -1)">‹</button>
+                                <button class="slider-btn next" onclick="changeProductImage(9, 1)">›</button>
+                                <div class="slider-dots">
+                                    <span class="dot active" onclick="setProductImage(9, 0)">•</span>
+                                    <span class="dot" onclick="setProductImage(9, 1)">•</span>
+                                    <span class="dot" onclick="setProductImage(9, 2)">•</span>
+                                </div>
+                                <div class="product-overlay">
+                                    <a href="product-detail.html?id=9" class="btn btn-primary">View Details</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Harnai Sheep</h3>
+                                <p class="product-breed">Breed: Harnai • بھیڑ</p>
+                                <div class="product-specs">
+                                    <span>📍 Quetta</span>
+                                    <span>⚖️ 58 kg</span>
+                                    <span>🦷 4 Teeth</span>
+                                </div>
+                                <div class="product-footer">
+                                    <div class="product-price">
+                                        <span class="price-label">Price:</span>
+                                        <span class="price-amount">PKR 54,000</span>
+                                    </div>
+                                    <button class="btn-add-cart" onclick="addToCart(9)">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Camel Products -->
+                        <div class="product-card" data-category="camels" data-breed="dromedary" data-weight="520" data-price="320000">
+                            <div class="product-badge qurbani-eligible">✓ Qurbani Eligible</div>
+                            <div class="product-image-slider" data-product="10">
+                                <img class="slider-image active" src="images/products/Camel Front View.jpg" alt="Camel Front">
+                                <img class="slider-image" src="images/products/Camel back View.jpg" alt="Camel Back">
+                                <img class="slider-image" src="images/products/Camel side View.jpg" alt="Camel Side">
+                                <button class="slider-btn prev" onclick="changeProductImage(10, -1)">‹</button>
+                                <button class="slider-btn next" onclick="changeProductImage(10, 1)">›</button>
+                                <div class="slider-dots">
+                                    <span class="dot active" onclick="setProductImage(10, 0)">•</span>
+                                    <span class="dot" onclick="setProductImage(10, 1)">•</span>
+                                    <span class="dot" onclick="setProductImage(10, 2)">•</span>
+                                </div>
+                                <div class="product-overlay">
+                                    <a href="product-detail.html?id=10" class="btn btn-primary">View Details</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Premium Dromedary Camel</h3>
+                                <p class="product-breed">Breed: Dromedary • اونٹ</p>
+                                <div class="product-specs">
+                                    <span>📍 Bahawalpur</span>
+                                    <span>⚖️ 520 kg</span>
+                                    <span>🦷 6 Teeth</span>
+                                </div>
+                                <div class="product-footer">
+                                    <div class="product-price">
+                                        <span class="price-label">Price:</span>
+                                        <span class="price-amount">PKR 320,000</span>
+                                    </div>
+                                    <button class="btn-add-cart" onclick="addToCart(10)">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="camels" data-breed="dromedary" data-weight="480" data-price="295000">
+                            <div class="product-badge qurbani-eligible">✓ Qurbani Eligible</div>
+                            <div class="product-image-slider" data-product="11">
+                                <img class="slider-image active" src="images/products/Camel Alternate View.jpg" alt="Camel Front Alt">
+                                <img class="slider-image" src="images/products/Camel back Alternate View.jpg" alt="Camel Back Alt">
+                                <img class="slider-image" src="images/products/Camel side Alternate View.jpg" alt="Camel Side Alt">
+                                <button class="slider-btn prev" onclick="changeProductImage(11, -1)">‹</button>
+                                <button class="slider-btn next" onclick="changeProductImage(11, 1)">›</button>
+                                <div class="slider-dots">
+                                    <span class="dot active" onclick="setProductImage(11, 0)">•</span>
+                                    <span class="dot" onclick="setProductImage(11, 1)">•</span>
+                                    <span class="dot" onclick="setProductImage(11, 2)">•</span>
+                                </div>
+                                <div class="product-overlay">
+                                    <a href="product-detail.html?id=11" class="btn btn-primary">View Details</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Dromedary Camel (Bari)</h3>
+                                <p class="product-breed">Breed: Dromedary • اونٹ</p>
+                                <div class="product-specs">
+                                    <span>📍 Rahimyar Khan</span>
+                                    <span>⚖️ 480 kg</span>
+                                    <span>🦷 5 Teeth</span>
+                                </div>
+                                <div class="product-footer">
+                                    <div class="product-price">
+                                        <span class="price-label">Price:</span>
+                                        <span class="price-amount">PKR 295,000</span>
+                                    </div>
+                                    <button class="btn-add-cart" onclick="addToCart(11)">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-card" data-category="goats" data-breed="beetal" data-weight="60" data-price="50000">
+                            <div class="product-badge qurbani-eligible">✓ Qurbani Eligible</div>
+                            <div class="product-image-slider" data-product="12">
+                                <img class="slider-image active" src="images/products/Beetal Goat (Alternate View).jpg" alt="Beetal Front Alt">
+                                <img class="slider-image" src="images/products/Beetal Goat back (Alternate View).jpg" alt="Beetal Back Alt">
+                                <img class="slider-image" src="images/products/Beetal Goat side (Alternate View).jpg" alt="Beetal Side Alt">
+                                <button class="slider-btn prev" onclick="changeProductImage(12, -1)">‹</button>
+                                <button class="slider-btn next" onclick="changeProductImage(12, 1)">›</button>
+                                <div class="slider-dots">
+                                    <span class="dot active" onclick="setProductImage(12, 0)">•</span>
+                                    <span class="dot" onclick="setProductImage(12, 1)">•</span>
+                                    <span class="dot" onclick="setProductImage(12, 2)">•</span>
+                                </div>
+                                <div class="product-overlay">
+                                    <a href="product-detail.html?id=12" class="btn btn-primary">View Details</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Champion Beetal Goat</h3>
+                                <p class="product-breed">Breed: Beetal • بکرا</p>
+                                <div class="product-specs">
+                                    <span>📍 Islamabad</span>
+                                    <span>⚖️ 60 kg</span>
+                                    <span>🦷 4 Teeth</span>
+                                </div>
+                                <div class="product-footer">
+                                    <div class="product-price">
+                                        <span class="price-label">Price:</span>
+                                        <span class="price-amount">PKR 50,000</span>
+                                    </div>
+                                    <button class="btn-add-cart" onclick="addToCart(12)">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>e-Qurbanify</h3>
+                    <p>Pakistan's most trusted online Qurbani marketplace, serving the Muslim Ummah with integrity and Islamic values.</p>
+                    <div class="footer-social">
+                        <a href="https://wa.me/923006306577" target="_blank" aria-label="WhatsApp">📱 WhatsApp</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="shop.html">Shop Animals</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Customer Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="contact.html#faq">FAQ</a></li>
+                        <li><a href="#">Qurbani Rulings</a></li>
+                        <li><a href="#">Track Order</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li>📱 WhatsApp: +92 300 6306577</li>
+                        <li>📞 Phone: +92 300 6306577</li>
+                        <li>📧 Email: info@e-qurbanify.pk</li>
+                        <li>🕒 Mon-Sun: 8AM - 10PM</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 e-Qurbanify. All rights reserved. | Made with ❤️ for the Muslim Ummah</p>
+                <div class="footer-badges">
+                    <span>🏅 100% Halal Certified</span>
+                    <span>🩺 Vet Verified</span>
+                    <span>📜 Shariah Compliant</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <div style="display: flex; gap: 10px; align-items: center;">
+                <button class="clear-cart-btn" id="clearCartBtn" title="Clear all items">🗑️ Clear</button>
+                <button class="close-cart" id="closeCart">&times;</button>
+            </div>
+        </div>
+        
+        <!-- Cart View (Screen 1) -->
+        <div class="cart-view" id="cartView">
+            <div class="cart-items" id="cartItems">
+                <p class="empty-cart">Your cart is empty</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cartTotal">PKR 0</span>
+                </div>
+                <button class="btn btn-primary btn-block" id="continueToPaymentBtn" style="display: none;">Continue to Payment</button>
+            </div>
+        </div>
+        
+        <!-- Payment View (Screen 2) -->
+        <div class="cart-payment-view" id="paymentView" style="display: none;">
+            <div class="payment-header">
+                <button class="back-to-cart-btn" onclick="showCartView()">← Back to Cart</button>
+                <h4>💳 Select Payment Method</h4>
+            </div>
+            <div class="payment-methods">
+                <label class="payment-option">
+                    <input type="radio" name="paymentMethod" value="bop" checked>
+                    <div class="payment-content">
+                        <span class="payment-icon">🏦</span>
+                        <span class="payment-name">Bank of Punjab</span>
+                    </div>
+                </label>
+                <label class="payment-option">
+                    <input type="radio" name="paymentMethod" value="jazzcash">
+                    <div class="payment-content">
+                        <span class="payment-icon">📱</span>
+                        <span class="payment-name">JazzCash</span>
+                    </div>
+                </label>
+                <label class="payment-option">
+                    <input type="radio" name="paymentMethod" value="easypaisa">
+                    <div class="payment-content">
+                        <span class="payment-icon">💳</span>
+                        <span class="payment-name">Easypaisa</span>
+                    </div>
+                </label>
+                <label class="payment-option">
+                    <input type="radio" name="paymentMethod" value="bank_transfer">
+                    <div class="payment-content">
+                        <span class="payment-icon">🏛️</span>
+                        <span class="payment-name">Bank Transfer</span>
+                    </div>
+                </label>
+                <label class="payment-option">
+                    <input type="radio" name="paymentMethod" value="cod">
+                    <div class="payment-content">
+                        <span class="payment-icon">💵</span>
+                        <span class="payment-name">Cash on Delivery</span>
+                    </div>
+                </label>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cartTotal2">PKR 0</span>
+                </div>
+                <button class="btn btn-primary btn-block" id="checkoutBtn" style="display: block;">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+    <script>
+        // Product Image Slider Functionality
+        const productSliders = {};
+
+        function changeProductImage(productId, direction) {
+            const slider = document.querySelector(`.product-image-slider[data-product="${productId}"]`);
+            const images = slider.querySelectorAll('.slider-image');
+            const dots = slider.querySelectorAll('.dot');
+            
+            if (!productSliders[productId]) {
+                productSliders[productId] = 0;
+            }
+            
+            // Remove active class from current image and dot
+            images[productSliders[productId]].classList.remove('active');
+            dots[productSliders[productId]].classList.remove('active');
+            
+            // Calculate new index
+            productSliders[productId] += direction;
+            
+            // Loop around
+            if (productSliders[productId] >= images.length) {
+                productSliders[productId] = 0;
+            } else if (productSliders[productId] < 0) {
+                productSliders[productId] = images.length - 1;
+            }
+            
+            // Add active class to new image and dot
+            images[productSliders[productId]].classList.add('active');
+            dots[productSliders[productId]].classList.add('active');
+        }
+
+        function setProductImage(productId, index) {
+            const slider = document.querySelector(`.product-image-slider[data-product="${productId}"]`);
+            const images = slider.querySelectorAll('.slider-image');
+            const dots = slider.querySelectorAll('.dot');
+            
+            if (!productSliders[productId]) {
+                productSliders[productId] = 0;
+            }
+            
+            // Remove active class from current image and dot
+            images[productSliders[productId]].classList.remove('active');
+            dots[productSliders[productId]].classList.remove('active');
+            
+            // Set new index
+            productSliders[productId] = index;
+            
+            // Add active class to new image and dot
+            images[productSliders[productId]].classList.add('active');
+            dots[productSliders[productId]].classList.add('active');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comprehensive Halal Qurbani services - vet verification, Sunnah slaughter, home delivery, and charity donation options.">
+    <title>Our Services | e-Qurbanify</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <h1>e-Qurbanify</h1>
+                        <span class="logo-tagline">حلال و طیب</span>
+                    </a>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop Animals</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="login.html" class="auth-nav-btn login-btn" id="loginNavBtn">Login</a>
+                    <a href="signup.html" class="auth-nav-btn signup-btn" id="signupNavBtn">Sign Up</a>
+                    <button class="currency-toggle" id="currencyToggle">PKR</button>
+                    <a href="#" class="cart-icon" id="cartIcon">
+                        🛒 <span class="cart-count" id="cartCount">0</span>
+                    </a>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">☰</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Services Hero -->
+    <section class="services-hero">
+        <div class="container">
+            <h1>Our Premium Services</h1>
+            <p>More than just livestock - a complete Halal Qurbani experience</p>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="services-section">
+        <div class="container">
+            <div class="services-grid-main">
+                <div class="service-card-large">
+                    <span class="service-icon-large">🩺</span>
+                    <h3>Vet-Verified Health Passport</h3>
+                    <p>Every animal undergoes rigorous veterinary examination before being listed on our platform. Complete transparency is our commitment to you.</p>
+                    <ul>
+                        <li>Complete physical health examination</li>
+                        <li>Vaccination records and certificates</li>
+                        <li>Disease-free certification</li>
+                        <li>Age and teeth verification</li>
+                        <li>Digital health records available to view</li>
+                    </ul>
+                </div>
+
+                <div class="service-card-large">
+                    <span class="service-icon-large">⚖️</span>
+                    <h3>Weight Guarantee Transparency</h3>
+                    <p>No hidden surprises. We use certified digital scales to provide accurate weight measurements you can trust.</p>
+                    <ul>
+                        <li>Live weight measured with calibrated digital scales</li>
+                        <li>Weight certificate provided</li>
+                        <li>Pre-purchase weight verification available</li>
+                        <li>Video evidence of weighing process</li>
+                        <li>100% money-back guarantee if discrepancy found</li>
+                    </ul>
+                </div>
+
+                <div class="service-card-large">
+                    <span class="service-icon-large">📹</span>
+                    <h3>Live Video Viewing Option</h3>
+                    <p>See your selected animal in real-time before making your purchase. Perfect for overseas buyers or those seeking extra assurance.</p>
+                    <ul>
+                        <li>Schedule live video call with farm</li>
+                        <li>View animal walking and moving</li>
+                        <li>Ask questions directly to farm staff</li>
+                        <li>360-degree viewing on request</li>
+                        <li>Available via WhatsApp or Zoom</li>
+                    </ul>
+                    <button class="btn btn-live-request" id="requestLiveBtn" onclick="requestLiveVideo()">📹 Request Live Video</button>
+                    <p class="live-status" id="liveStatus" style="margin-top: 1rem; font-size: 0.9rem; color: var(--gray-text);"></p>
+                </div>
+
+                <div class="service-card-large">
+                    <span class="service-icon-large">🚚</span>
+                    <h3>Delivery OR On-Spot Slaughter</h3>
+                    <p>Choose what works best for you - live animal delivery or complete slaughter and meat delivery service.</p>
+                    <ul>
+                        <li><strong>Live Delivery:</strong> Animal transported safely to your location</li>
+                        <li><strong>On-Spot Slaughter:</strong> Performed at hygienic farm facility</li>
+                        <li>Clean, ventilated transportation vehicles</li>
+                        <li>Free delivery within city limits</li>
+                        <li>Delivery tracking and updates</li>
+                    </ul>
+                </div>
+
+                <div class="service-card-large">
+                    <span class="service-icon-large">🕌</span>
+                    <h3>Eid Slaughter According to Sunnah</h3>
+                    <p>Our trained Islamic slaughtermen follow the authentic Sunnah method, ensuring your Qurbani is performed correctly.</p>
+                    <ul>
+                        <li>Slaughter performed by certified Muslim slaughtermen</li>
+                        <li>Bismillah and Allahu Akbar recited</li>
+                        <li>Sharp blade used for swift, humane process</li>
+                        <li>Animal faces Qibla direction</li>
+                        <li>Complete adherence to Hanafi, Shafi'i, Maliki, and Hanbali schools</li>
+                    </ul>
+                </div>
+
+                <div class="service-card-large">
+                    <span class="service-icon-large">🔪</span>
+                    <h3>Hygienic Cutting & Packing</h3>
+                    <p>Professional meat processing in modern, clean facilities. Your meat is handled with utmost care and hygiene.</p>
+                    <ul>
+                        <li>Cutting performed in sanitized facility</li>
+                        <li>Professional butchers with years of experience</li>
+                        <li>Vacuum-sealed packaging available</li>
+                        <li>Portions separated as per your request</li>
+                        <li>Cold storage and refrigerated delivery</li>
+                    </ul>
+                </div>
+
+                <div class="service-card-large">
+                    <span class="service-icon-large">❤️</span>
+                    <h3>Charity Meat Donation Option</h3>
+                    <p>Following the beautiful Sunnah of distribution, we facilitate meat donation to deserving families through verified welfare organizations.</p>
+                    <ul>
+                        <li>Partnership with trusted Islamic charities</li>
+                        <li>Verified deserving families identified</li>
+                        <li>Photo/video evidence of distribution</li>
+                        <li>Choose which portions to donate (1/3, 1/2, or custom)</li>
+                        <li>Earn the reward of feeding the poor</li>
+                    </ul>
+                </div>
+
+                <div class="service-card-large">
+                    <span class="service-icon-large">📜</span>
+                    <h3>Shariah Compliance Guarantee</h3>
+                    <p>Every aspect of our service is verified by Islamic scholars to ensure complete Shariah compliance.</p>
+                    <ul>
+                        <li>Animals meet Islamic age requirements</li>
+                        <li>Free from defects prohibited in Shariah</li>
+                        <li>Slaughter method certified by Ulema</li>
+                        <li>Consultation with Islamic scholars available</li>
+                        <li>Fatwa and guidance for overseas buyers</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Packages -->
+    <section style="padding: 4rem 0; background: var(--light-green);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Complete Service Packages</h2>
+                <p>Choose the package that suits your needs</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <div style="background: var(--white); padding: 2rem; border-radius: 12px; box-shadow: var(--shadow-md);">
+                    <h3 style="color: var(--primary-green); font-size: 1.8rem; margin-bottom: 1rem;">Basic Package</h3>
+                    <p style="color: var(--gray-text); margin-bottom: 1.5rem;">For those who want to handle slaughter themselves</p>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 2rem;">
+                        <li style="padding: 0.6rem 0; color: var(--dark-text); display: flex; gap: 0.5rem;">✓ Live animal delivery</li>
+                        <li style="padding: 0.6rem 0; color: var(--dark-text); display: flex; gap: 0.5rem;">✓ Health certificate</li>
+                        <li style="padding: 0.6rem 0; color: var(--dark-text); display: flex; gap: 0.5rem;">✓ Weight verification</li>
+                        <li style="padding: 0.6rem 0; color: var(--dark-text); display: flex; gap: 0.5rem;">✓ Free city delivery</li>
+                    </ul>
+                    <a href="shop.html" class="btn btn-outline btn-block">Select Animals</a>
+                </div>
+
+                <div style="background: var(--primary-green); color: var(--white); padding: 2rem; border-radius: 12px; box-shadow: var(--shadow-lg); transform: scale(1.05); position: relative;">
+                    <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: var(--accent-gold); padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.85rem; font-weight: 700;">MOST POPULAR</div>
+                    <h3 style="font-size: 1.8rem; margin-bottom: 1rem; margin-top: 0.5rem;">Premium Package</h3>
+                    <p style="opacity: 0.95; margin-bottom: 1.5rem;">Complete Sunnah slaughter and delivery service</p>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 2rem;">
+                        <li style="padding: 0.6rem 0; display: flex; gap: 0.5rem;">✓ All Basic features</li>
+                        <li style="padding: 0.6rem 0; display: flex; gap: 0.5rem;">✓ Sunnah slaughter service</li>
+                        <li style="padding: 0.6rem 0; display: flex; gap: 0.5rem;">✓ Professional cutting</li>
+                        <li style="padding: 0.6rem 0; display: flex; gap: 0.5rem;">✓ Hygienic packaging</li>
+                        <li style="padding: 0.6rem 0; display: flex; gap: 0.5rem;">✓ Meat home delivery</li>
+                    </ul>
+                    <a href="shop.html" class="btn btn-primary btn-block" style="background: var(--accent-gold);">Select Animals</a>
+                </div>
+
+                <div style="background: var(--white); padding: 2rem; border-radius: 12px; box-shadow: var(--shadow-md);">
+                    <h3 style="color: var(--primary-green); font-size: 1.8rem; margin-bottom: 1rem;">Sadaqah Package</h3>
+                    <p style="color: var(--gray-text); margin-bottom: 1.5rem;">Includes charity meat distribution</p>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 2rem;">
+                        <li style="padding: 0.6rem 0; color: var(--dark-text); display: flex; gap: 0.5rem;">✓ All Premium features</li>
+                        <li style="padding: 0.6rem 0; color: var(--dark-text); display: flex; gap: 0.5rem;">✓ Charity distribution</li>
+                        <li style="padding: 0.6rem 0; color: var(--dark-text); display: flex; gap: 0.5rem;">✓ Photo evidence</li>
+                        <li style="padding: 0.6rem 0; color: var(--dark-text); display: flex; gap: 0.5rem;">✓ Receipt for records</li>
+                    </ul>
+                    <a href="shop.html" class="btn btn-outline btn-block">Select Animals</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Experience Premium Qurbani Service?</h2>
+                <p>Browse our verified livestock and book your Qurbani today</p>
+                <div class="cta-buttons">
+                    <a href="shop.html" class="btn btn-primary btn-large">Browse Animals Now</a>
+                    <a href="contact.html" class="btn btn-outline btn-large">Contact Support</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>e-Qurbanify</h3>
+                    <p>Pakistan's most trusted online Qurbani marketplace, serving the Muslim Ummah with integrity and Islamic values.</p>
+                    <div class="footer-social">
+                        <a href="https://wa.me/923006306577" target="_blank" aria-label="WhatsApp">📱 WhatsApp</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="shop.html">Shop Animals</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Customer Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="contact.html#faq">FAQ</a></li>
+                        <li><a href="#">Qurbani Rulings</a></li>
+                        <li><a href="#">Track Order</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li>📱 WhatsApp: +92 300 6306577</li>
+                        <li>📞 Phone: +92 300 6306577</li>
+                        <li>📧 Email: info@e-qurbanify.pk</li>
+                        <li>🕒 Mon-Sun: 8AM - 10PM</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 e-Qurbanify. All rights reserved. | Made with ❤️ for the Muslim Ummah</p>
+                <div class="footer-badges">
+                    <span>🏅 100% Halal Certified</span>
+                    <span>🩺 Vet Verified</span>
+                    <span>📜 Shariah Compliant</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <div style="display: flex; gap: 10px; align-items: center;">
+                <button class="clear-cart-btn" id="clearCartBtn" title="Clear all items">🗑️ Clear</button>
+                <button class="close-cart" id="closeCart">&times;</button>
+            </div>
+        </div>
+        
+        <!-- Cart View (Screen 1) -->
+        <div class="cart-view" id="cartView">
+            <div class="cart-items" id="cartItems">
+                <p class="empty-cart">Your cart is empty</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cartTotal">PKR 0</span>
+                </div>
+                <button class="btn btn-primary btn-block" id="continueToPaymentBtn" style="display: none;">Continue to Payment</button>
+            </div>
+        </div>
+        
+        <!-- Payment View (Screen 2) -->
+        <div class="cart-payment-view" id="paymentView" style="display: none;">
+            <div class="payment-header">
+                <button class="back-to-cart-btn" onclick="showCartView()">← Back to Cart</button>
+                <h4>💳 Select Payment Method</h4>
+            </div>
+            <div class="payment-methods">
+                <label class="payment-option">
+                    <input type="radio" name="paymentMethod" value="bop" checked>
+                    <div class="payment-content">
+                        <span class="payment-icon">🏦</span>
+                        <span class="payment-name">Bank of Punjab</span>
+                    </div>
+                </label>
+                <label class="payment-option">
+                    <input type="radio" name="paymentMethod" value="jazzcash">
+                    <div class="payment-content">
+                        <span class="payment-icon">📱</span>
+                        <span class="payment-name">JazzCash</span>
+                    </div>
+                </label>
+                <label class="payment-option">
+                    <input type="radio" name="paymentMethod" value="easypaisa">
+                    <div class="payment-content">
+                        <span class="payment-icon">💳</span>
+                        <span class="payment-name">Easypaisa</span>
+                    </div>
+                </label>
+                <label class="payment-option">
+                    <input type="radio" name="paymentMethod" value="bank_transfer">
+                    <div class="payment-content">
+                        <span class="payment-icon">🏛️</span>
+                        <span class="payment-name">Bank Transfer</span>
+                    </div>
+                </label>
+                <label class="payment-option">
+                    <input type="radio" name="paymentMethod" value="cod">
+                    <div class="payment-content">
+                        <span class="payment-icon">💵</span>
+                        <span class="payment-name">Cash on Delivery</span>
+                    </div>
+                </label>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cartTotal2">PKR 0</span>
+                </div>
+                <button class="btn btn-primary btn-block" id="checkoutBtn" style="display: block;">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+    <script>
+        // Request Live Video functionality
+        let isLiveRequested = false;
+        const WHATSAPP_NUMBER = '03006306577';
+        const WORKING_HOURS_START = 8; // 8 AM
+        const WORKING_HOURS_END = 20; // 8 PM
+
+        function checkWorkingHours() {
+            const now = new Date();
+            const hour = now.getHours();
+            return hour >= WORKING_HOURS_START && hour < WORKING_HOURS_END;
+        }
+
+        function requestLiveVideo() {
+            const btn = document.getElementById('requestLiveBtn');
+            const status = document.getElementById('liveStatus');
+            
+            if (!checkWorkingHours()) {
+                status.style.color = '#d32f2f';
+                status.innerHTML = `⚠️ Live viewing is only available during working hours (${WORKING_HOURS_START}:00 AM - ${WORKING_HOURS_END}:00 PM). Please try again during business hours.`;
+                return;
+            }
+            
+            if (!isLiveRequested) {
+                // Change button color theme
+                btn.style.background = 'linear-gradient(135deg, #4CAF50 0%, #2e7d32 100%)';
+                btn.style.boxShadow = '0 4px 15px rgba(76, 175, 80, 0.4)';
+                btn.innerHTML = '✓ Request Sent - Initiating Call...';
+                isLiveRequested = true;
+                
+                status.style.color = '#2e7d32';
+                status.innerHTML = '✓ Request received! Redirecting to WhatsApp video call...';
+                
+                // Redirect to WhatsApp video call after 2 seconds
+                setTimeout(() => {
+                    const message = encodeURIComponent('Hello! I would like to request a live video viewing of the animals. Can we start a video call?');
+                    const whatsappURL = `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
+                    window.open(whatsappURL, '_blank');
+                    
+                    status.innerHTML = '📱 WhatsApp opened. Please start the video call for real-time viewing!';
+                }, 2000);
+            }
+        }
+
+        // Check working hours on page load and display status
+        document.addEventListener('DOMContentLoaded', function() {
+            const status = document.getElementById('liveStatus');
+            if (checkWorkingHours()) {
+                status.style.color = '#2e7d32';
+                status.innerHTML = '🟢 Live viewing available now! Click to request.';
+            } else {
+                status.style.color = '#f57c00';
+                status.innerHTML = `🟠 Live viewing available ${WORKING_HOURS_START}:00 AM - ${WORKING_HOURS_END}:00 PM`;
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View detailed information about our Halal livestock. Complete health passport, Shariah compliance, and delivery options available.">
+    <title>Animal Details | e-Qurbanify</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <h1>e-Qurbanify</h1>
+                        <span class="logo-tagline">حلال و طیب</span>
+                    </a>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html" class="active">Shop Animals</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="login.html" class="auth-nav-btn login-btn" id="loginNavBtn">Login</a>
+                    <a href="signup.html" class="auth-nav-btn signup-btn" id="signupNavBtn">Sign Up</a>
+                    <button class="currency-toggle" id="currencyToggle">PKR</button>
+                    <a href="#" class="cart-icon" id="cartIcon">
+                        🛒 <span class="cart-count" id="cartCount">0</span>
+                    </a>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">☰</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail-section">
+        <div class="container">
+            <div class="product-detail-layout">
+                <!-- Product Gallery -->
+                <div class="product-gallery">
+                    <div class="main-image" id="mainImage">
+                        <img src="images/products/red-sindhi-1.jpg" alt="Premium Red Sindhi Cattle">
+                    </div>
+                    <div class="thumbnail-gallery" id="thumbnailGallery">
+                        <!-- Thumbnails will be dynamically loaded based on product ID -->
+                    </div>
+                </div>
+
+                <!-- Product Details -->
+                <div class="product-details">
+                    <div class="product-title-section">
+                        <h1>Premium Red Sindhi Cattle</h1>
+                        <p class="product-subtitle">Breed: Red Sindhi • گائے</p>
+                    </div>
+
+                    <div class="product-badges-list">
+                        <span class="detail-badge halal">✓ 100% Halal Certified</span>
+                        <span class="detail-badge">✓ Vet Verified</span>
+                        <span class="detail-badge">✓ Qurbani Eligible</span>
+                        <span class="detail-badge">✓ Health Passport</span>
+                    </div>
+
+                    <div class="product-price-section">
+                        <div class="price-row">
+                            <div>
+                                <div class="price-label" style="font-size: 0.9rem; color: var(--gray-text); margin-bottom: 0.3rem;">Price:</div>
+                                <div class="price-main">PKR 180,000</div>
+                            </div>
+                            <div class="price-usd">≈ $643 USD</div>
+                        </div>
+                    </div>
+
+                    <div class="product-info-grid">
+                        <div class="info-item">
+                            <div class="info-label">Live Weight</div>
+                            <div class="info-value">350 kg</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Age/Teeth Status</div>
+                            <div class="info-value">4 Teeth (2 Years)</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Farm Location</div>
+                            <div class="info-value">Karachi, Sindh</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Breed Type</div>
+                            <div class="info-value">Red Sindhi</div>
+                        </div>
+                    </div>
+
+                    <div class="compliance-section">
+                        <h3>🕌 Qurbani Compliance & Shariah Eligibility</h3>
+                        <ul class="compliance-list">
+                            <li>Meets Islamic age requirement for Qurbani (2+ years for cattle)</li>
+                            <li>Free from physical defects as per Shariah guidelines</li>
+                            <li>Healthy and disease-free with complete vaccination</li>
+                            <li>Slaughter will be performed according to Sunnah method</li>
+                            <li>Trained and certified Islamic slaughterman</li>
+                            <li>Bismillah, Allahu Akbar recited during slaughter</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-options">
+                        <h4>📦 Select Your Service Option:</h4>
+                        <label class="service-option-item">
+                            <input type="radio" name="service" value="eid-booking" checked>
+                            <div>
+                                <strong>Book for Eid Qurbani</strong>
+                                <p style="margin: 0.3rem 0 0; font-size: 0.9rem; color: var(--gray-text);">Animal reserved for Eid-ul-Adha with Sunnah slaughter service</p>
+                            </div>
+                        </label>
+                        <label class="service-option-item">
+                            <input type="radio" name="service" value="immediate">
+                            <div>
+                                <strong>Buy for Immediate Delivery</strong>
+                                <p style="margin: 0.3rem 0 0; font-size: 0.9rem; color: var(--gray-text);">Live animal delivered to your location within 24-48 hours</p>
+                            </div>
+                        </label>
+                        <label class="service-option-item">
+                            <input type="radio" name="service" value="onspot">
+                            <div>
+                                <strong>On-Spot Slaughter & Packaging</strong>
+                                <p style="margin: 0.3rem 0 0; font-size: 0.9rem; color: var(--gray-text);">Slaughter at farm, hygienic cutting & home delivery of meat</p>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button class="btn btn-primary btn-large" onclick="addToCart(1)">🛒 Add to Cart</button>
+                        <button class="btn btn-live-request btn-large" id="requestLiveBtn" onclick="requestLiveVideo()">📱 Request Live Video</button>
+                    </div>
+                    <p class="live-status" id="liveStatus" style="margin-top: 1rem; text-align: center; font-size: 0.9rem; font-weight: 500;"></p>
+
+                    <div style="background: var(--light-green); padding: 1.5rem; border-radius: 8px; margin-top: 1.5rem;">
+                        <h4 style="color: var(--primary-green); margin-bottom: 0.8rem;">📋 Included Services:</h4>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="padding: 0.4rem 0; color: var(--dark-text);">✓ Complete veterinary health certificate</li>
+                            <li style="padding: 0.4rem 0; color: var(--dark-text);">✓ Weight verification with digital scales</li>
+                            <li style="padding: 0.4rem 0; color: var(--dark-text);">✓ Free transportation within city limits</li>
+                            <li style="padding: 0.4rem 0; color: var(--dark-text);">✓ Option to donate meat portions to charity</li>
+                            <li style="padding: 0.4rem 0; color: var(--dark-text);">✓ 24/7 customer support via WhatsApp</li>
+                        </ul>
+                    </div>
+
+                    <div style="background: var(--beige); padding: 1.5rem; border-radius: 8px; margin-top: 1.5rem;">
+                        <h4 style="color: var(--primary-green); margin-bottom: 0.8rem;">📞 Need Help?</h4>
+                        <p style="color: var(--gray-text); margin-bottom: 1rem;">Our Islamic livestock experts are here to assist you</p>
+                        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                            <a href="https://wa.me/923001234567" class="btn btn-outline">📱 WhatsApp Chat</a>
+                            <a href="tel:+923006306577" class="btn btn-outline">📞 Call Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Information Tabs -->
+            <div style="background: var(--white); padding: 2rem; border-radius: 12px; margin-top: 3rem; box-shadow: var(--shadow-sm);">
+                <h2 style="color: var(--primary-green); margin-bottom: 1.5rem;">Additional Information</h2>
+                
+                <div style="border-bottom: 2px solid var(--light-gray); margin-bottom: 1.5rem;">
+                    <h3 style="color: var(--primary-green); margin-bottom: 1rem;">🩺 Health & Vaccination Record</h3>
+                    <p style="color: var(--gray-text); line-height: 1.7; margin-bottom: 1.5rem;">
+                        This animal has been thoroughly examined by licensed veterinarians and is in excellent health condition. 
+                        All required vaccinations have been administered according to Pakistan's livestock health standards.
+                    </p>
+                </div>
+
+                <div style="border-bottom: 2px solid var(--light-gray); margin-bottom: 1.5rem;">
+                    <h3 style="color: var(--primary-green); margin-bottom: 1rem;">🚚 Delivery & Slaughter Options</h3>
+                    <p style="color: var(--gray-text); line-height: 1.7; margin-bottom: 1.5rem;">
+                        <strong>Home Delivery:</strong> Live animal transported in clean, ventilated vehicle.<br>
+                        <strong>On-Spot Slaughter:</strong> Performed at our hygienic facility by trained Islamic slaughterman. 
+                        Meat is professionally cut, packed, and delivered to your doorstep within hours.<br>
+                        <strong>Eid Booking:</strong> Animal reserved for Eid-ul-Adha. Slaughter performed on your chosen day following Sunnah.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 style="color: var(--primary-green); margin-bottom: 1rem;">❤️ Charity Meat Donation</h3>
+                    <p style="color: var(--gray-text); line-height: 1.7;">
+                        Following the beautiful Sunnah, you can choose to distribute portions of meat to deserving families. 
+                        We partner with verified Islamic welfare organizations to ensure your sadaqah reaches those in need. 
+                        Simply select this option during checkout.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>e-Qurbanify</h3>
+                    <p>Pakistan's most trusted online Qurbani marketplace, serving the Muslim Ummah with integrity and Islamic values.</p>
+                    <div class="footer-social">
+                        <a href="https://wa.me/923006306577" target="_blank" aria-label="WhatsApp">📱 WhatsApp</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="shop.html">Shop Animals</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Customer Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="contact.html#faq">FAQ</a></li>
+                        <li><a href="#">Qurbani Rulings</a></li>
+                        <li><a href="#">Track Order</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li>📱 WhatsApp: +92 300 6306577</li>
+                        <li>📞 Phone: +92 300 6306577</li>
+                        <li>📧 Email: info@e-qurbanify.pk</li>
+                        <li>🕒 Mon-Sun: 8AM - 10PM</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 e-Qurbanify. All rights reserved. | Made with ❤️ for the Muslim Ummah</p>
+                <div class="footer-badges">
+                    <span>🏅 100% Halal Certified</span>
+                    <span>🩺 Vet Verified</span>
+                    <span>📜 Shariah Compliant</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <div style="display: flex; gap: 10px; align-items: center;">
+                <button class="clear-cart-btn" id="clearCartBtn" title="Clear all items">🗑️ Clear</button>
+                <button class="close-cart" id="closeCart">&times;</button>
+            </div>
+        </div>
+        
+        <!-- Cart View (Screen 1) -->
+        <div class="cart-view" id="cartView">
+            <div class="cart-items" id="cartItems">
+                <p class="empty-cart">Your cart is empty</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cartTotal">PKR 0</span>
+                </div>
+                <button class="btn btn-primary btn-block" id="continueToPaymentBtn" style="display: none;">Continue to Payment</button>
+            </div>
+        </div>
+        
+        <!-- Payment View (Screen 2) -->
+        <div class="cart-payment-view" id="paymentView" style="display: none;">
+            <div class="payment-header">
+                <button class="back-to-cart-btn" onclick="showCartView()">← Back to Cart</button>
+                <h4>💳 Select Payment Method</h4>
+            </div>
+            <div class="payment-methods">
+                <label class="payment-option">
+                    <input type="radio" name="paymentMethod" value="bop" checked>
+                    <div class="payment-content">
+                        <span class="payment-icon">🏦</span>
+                        <span class="payment-name">Bank of Punjab</span>
+                    </div>
+                </label>
+                <label class="payment-option">
+                    <input type="radio" name="paymentMethod" value="jazzcash">
+                    <div class="payment-content">
+                        <span class="payment-icon">📱</span>
+                        <span class="payment-name">JazzCash</span>
+                    </div>
+                </label>
+                <label class="payment-option">
+                    <input type="radio" name="paymentMethod" value="easypaisa">
+                    <div class="payment-content">
+                        <span class="payment-icon">💳</span>
+                        <span class="payment-name">Easypaisa</span>
+                    </div>
+                </label>
+                <label class="payment-option">
+                    <input type="radio" name="paymentMethod" value="bank_transfer">
+                    <div class="payment-content">
+                        <span class="payment-icon">🏛️</span>
+                        <span class="payment-name">Bank Transfer</span>
+                    </div>
+                </label>
+                <label class="payment-option">
+                    <input type="radio" name="paymentMethod" value="cod">
+                    <div class="payment-content">
+                        <span class="payment-icon">💵</span>
+                        <span class="payment-name">Cash on Delivery</span>
+                    </div>
+                </label>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cartTotal2">PKR 0</span>
+                </div>
+                <button class="btn btn-primary btn-block" id="checkoutBtn" style="display: block;">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+    <script>
+        // Product images database - 3 views for each product
+        const productImages = {
+            '1': {
+                name: 'Premium Red Sindhi Cattle',
+                images: [
+                    { src: 'images/products/red-sindhi-1.jpg', label: 'Front View' },
+                    { src: 'images/products/red-sindhi-2.jpg', label: 'Back View' },
+                    { src: 'images/products/red-sindhi-3.jpg', label: 'Side View' }
+                ]
+            },
+            '2': {
+                name: 'Sahiwal Bull',
+                images: [
+                    { src: 'images/products/sahiwal Front View.jpg', label: 'Front View' },
+                    { src: 'images/products/sahiwal back View.jpg', label: 'Back View' },
+                    { src: 'images/products/sahiwal side View.jpg', label: 'Side View' }
+                ]
+            },
+            '3': {
+                name: 'Cholistani Bull',
+                images: [
+                    { src: 'images/products/Cholistani Front View.jpg', label: 'Front View' },
+                    { src: 'images/products/Cholistani back View.jpg', label: 'Back View' },
+                    { src: 'images/products/Cholistani side View.jpg', label: 'Side View' }
+                ]
+            },
+            '4': {
+                name: 'Premium Beetal Goat',
+                images: [
+                    { src: 'images/products/Beetal Goat Front View.jpg', label: 'Front View' },
+                    { src: 'images/products/Beetal Goat back View.jpg', label: 'Back View' },
+                    { src: 'images/products/Beetal Goat side View.jpg', label: 'Side View' }
+                ]
+            },
+            '5': {
+                name: 'Teddy Goat',
+                images: [
+                    { src: 'images/products/Teddy Goat Front View.jpg', label: 'Front View' },
+                    { src: 'images/products/Teddy Goat back View.jpg', label: 'Back View' },
+                    { src: 'images/products/Teddy Goat side View.jpg', label: 'Side View' }
+                ]
+            },
+            '6': {
+                name: 'Kamori Goat',
+                images: [
+                    { src: 'images/products/Kamori Goat Front View.jpg', label: 'Front View' },
+                    { src: 'images/products/Kamori Goat back View.jpg', label: 'Back View' },
+                    { src: 'images/products/Kamori Goat side View.jpg', label: 'Side View' }
+                ]
+            },
+            '7': {
+                name: 'Kachhi Sheep',
+                images: [
+                    { src: 'images/products/Kachhi Sheep Front View.jpg', label: 'Front View' },
+                    { src: 'images/products/Kachhi Sheep back View.jpg', label: 'Back View' },
+                    { src: 'images/products/Kachhi Sheep side View.jpg', label: 'Side View' }
+                ]
+            },
+            '8': {
+                name: 'Lohi Sheep',
+                images: [
+                    { src: 'images/products/Lohi Sheep Front View.jpg', label: 'Front View' },
+                    { src: 'images/products/Lohi Sheep back View.jpg', label: 'Back View' },
+                    { src: 'images/products/Lohi Sheep side View.jpg', label: 'Side View' }
+                ]
+            },
+            '9': {
+                name: 'Harnai Sheep',
+                images: [
+                    { src: 'images/products/Harnai Sheep Front View.jpg', label: 'Front View' },
+                    { src: 'images/products/Harnai Sheep back View.jpg', label: 'Back View' },
+                    { src: 'images/products/Harnai Sheep side View.jpg', label: 'Side View' }
+                ]
+            },
+            '10': {
+                name: 'Premium Dromedary Camel',
+                images: [
+                    { src: 'images/products/Camel Front View.jpg', label: 'Front View' },
+                    { src: 'images/products/Camel back View.jpg', label: 'Back View' },
+                    { src: 'images/products/Camel side View.jpg', label: 'Side View' }
+                ]
+            },
+            '11': {
+                name: 'Dromedary Camel Bari',
+                images: [
+                    { src: 'images/products/Camel Alternate View.jpg', label: 'Front View' },
+                    { src: 'images/products/Camel back Alternate View.jpg', label: 'Back View' },
+                    { src: 'images/products/Camel side Alternate View.jpg', label: 'Side View' }
+                ]
+            },
+            '12': {
+                name: 'Champion Beetal Goat',
+                images: [
+                    { src: 'images/products/Beetal Goat (Alternate View).jpg', label: 'Front View' },
+                    { src: 'images/products/Beetal Goat back (Alternate View).jpg', label: 'Back View' },
+                    { src: 'images/products/Beetal Goat side (Alternate View).jpg', label: 'Side View' }
+                ]
+            }
+        };
+
+        // Load product images based on URL parameter
+        function loadProductImages() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const productId = urlParams.get('id') || '1';
+            
+            const product = productImages[productId];
+            if (!product) return;
+
+            // Set main image
+            const mainImage = document.getElementById('mainImage');
+            mainImage.innerHTML = `<img src="${product.images[0].src}" alt="${product.name}">`;
+
+            // Generate thumbnails
+            const thumbnailGallery = document.getElementById('thumbnailGallery');
+            thumbnailGallery.innerHTML = '';
+            
+            product.images.forEach((image, index) => {
+                const thumbnail = document.createElement('div');
+                thumbnail.className = index === 0 ? 'thumbnail active' : 'thumbnail';
+                thumbnail.onclick = function() { changeImage(image.src, this); };
+                thumbnail.innerHTML = `
+                    <img src="${image.src}" alt="${image.label}">
+                    <span class="thumbnail-label">${image.label}</span>
+                `;
+                thumbnailGallery.appendChild(thumbnail);
+            });
+        }
+
+        function changeImage(src, thumb) {
+            document.getElementById('mainImage').innerHTML = '<img src="' + src + '" alt="Animal View">';
+            document.querySelectorAll('.thumbnail').forEach(t => t.classList.remove('active'));
+            thumb.classList.add('active');
+        }
+
+        // Request Live Video functionality
+        let isLiveRequested = false;
+        const WHATSAPP_NUMBER = '03006306577';
+        const WORKING_HOURS_START = 8; // 8 AM
+        const WORKING_HOURS_END = 20; // 8 PM
+
+        function checkWorkingHours() {
+            const now = new Date();
+            const hour = now.getHours();
+            return hour >= WORKING_HOURS_START && hour < WORKING_HOURS_END;
+        }
+
+        function requestLiveVideo() {
+            const btn = document.getElementById('requestLiveBtn');
+            const status = document.getElementById('liveStatus');
+            
+            if (!checkWorkingHours()) {
+                status.style.color = '#d32f2f';
+                status.innerHTML = `⚠️ Live viewing is only available during working hours (${WORKING_HOURS_START}:00 AM - ${WORKING_HOURS_END}:00 PM). Please try again during business hours.`;
+                return;
+            }
+            
+            if (!isLiveRequested) {
+                // Change button color theme to green
+                btn.style.background = 'linear-gradient(135deg, #4CAF50 0%, #2e7d32 100%)';
+                btn.style.boxShadow = '0 4px 15px rgba(76, 175, 80, 0.4)';
+                btn.innerHTML = '✓ Request Sent - Initiating Call...';
+                isLiveRequested = true;
+                
+                status.style.color = '#2e7d32';
+                status.innerHTML = '✓ Request received! Redirecting to WhatsApp video call...';
+                
+                // Redirect to WhatsApp video call after 2 seconds
+                setTimeout(() => {
+                    const message = encodeURIComponent('Hello! I would like to request a live video viewing of this animal. Can we start a video call for real-time viewing?');
+                    const whatsappURL = `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
+                    window.open(whatsappURL, '_blank');
+                    
+                    status.innerHTML = '📱 WhatsApp opened. Please start the video call for real-time viewing!';
+                }, 2000);
+            }
+        }
+
+        // Check working hours on page load and display status
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load product images first
+            loadProductImages();
+            
+            const status = document.getElementById('liveStatus');
+            if (checkWorkingHours()) {
+                status.style.color = '#2e7d32';
+                status.innerHTML = '🟢 Live viewing available now! Click to request.';
+            } else {
+                status.style.color = '#f57c00';
+                status.innerHTML = `🟠 Live viewing available ${WORKING_HOURS_START}:00 AM - ${WORKING_HOURS_END}:00 PM`;
+            }
+        });
+    </script>
+</body>
+</html>

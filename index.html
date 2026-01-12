@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pakistan's most trusted online Qurbani marketplace. Buy 100% Halal, vet-verified livestock for Eid-ul-Adha and year-round needs. Sunnah-compliant slaughter services.">
+    <meta name="keywords" content="Online Qurbani Pakistan, Buy Qurbani Animals, Halal Qurbani Service, Eid Qurbani, Buy Bakra Online Pakistan">
+    <title>e-Qurbanify - Pakistan's Trusted Online Qurbani Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1>e-Qurbanify</h1>
+                    <span class="logo-tagline">حلال و طیب</span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="shop.html">Shop Animals</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="login.html" class="auth-nav-btn login-btn" id="loginNavBtn">Login</a>
+                    <a href="signup.html" class="auth-nav-btn signup-btn" id="signupNavBtn">Sign Up</a>
+                    <button class="currency-toggle" id="currencyToggle">PKR</button>
+                    <a href="#" class="cart-icon" id="cartIcon">
+                        🛒 <span class="cart-count" id="cartCount">0</span>
+                    </a>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">☰</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">بسم الله الرحمن الرحيم</div>
+                <h1 class="hero-title">Pakistan's Trusted Online Qurbani Marketplace</h1>
+                <p class="hero-subtitle">
+                    <span class="trust-point">✓ 100% Halal</span>
+                    <span class="trust-point">✓ Vet Verified</span>
+                    <span class="trust-point">✓ Sunnah Compliant</span>
+                </p>
+                <div class="hero-cta">
+                    <a href="shop.html" class="btn btn-primary">View Qurbani Animals</a>
+                    <a href="shop.html" class="btn btn-secondary">Book Your Qurbani Online</a>
+                </div>
+                
+                <!-- Trust Badges Above the Fold -->
+                <div class="trust-badges">
+                    <div class="trust-badge">
+                        <div class="badge-icon">🏅</div>
+                        <div class="badge-text">
+                            <strong>Halal Certified</strong>
+                            <span>100% Shariah Compliant</span>
+                        </div>
+                    </div>
+                    <div class="trust-badge">
+                        <div class="badge-icon">🩺</div>
+                        <div class="badge-text">
+                            <strong>Vet Verified</strong>
+                            <span>Health Passport Included</span>
+                        </div>
+                    </div>
+                    <div class="trust-badge">
+                        <div class="badge-icon">📜</div>
+                        <div class="badge-text">
+                            <strong>Sunnah Method</strong>
+                            <span>Trained Islamic Slaughter</span>
+                        </div>
+                    </div>
+                    <div class="trust-badge">
+                        <div class="badge-icon">🚚</div>
+                        <div class="badge-text">
+                            <strong>Home Delivery</strong>
+                            <span>Or On-Spot Slaughter</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="featured-categories">
+        <div class="container">
+            <div class="section-header">
+                <h2>Select Your Qurbani Animal</h2>
+                <p>Premium livestock verified for Islamic compliance</p>
+            </div>
+            
+            <div class="category-grid">
+                <a href="shop.html?category=cattle" class="category-card">
+                    <div class="category-image">
+                        <img src="images/cattle-placeholder.jpg" alt="Cattle for Qurbani" loading="lazy">
+                    </div>
+                    <h3>Cattle</h3>
+                    <p>Red Sindhi • Sahiwal • Cholistani</p>
+                    <span class="category-price">From PKR 150,000</span>
+                </a>
+                
+                <a href="shop.html?category=goats" class="category-card">
+                    <div class="category-image">
+                        <img src="images/goat-placeholder.jpg" alt="Goats for Qurbani" loading="lazy">
+                    </div>
+                    <h3>Goats</h3>
+                    <p>Beetal • Teddy • Kamori</p>
+                    <span class="category-price">From PKR 35,000</span>
+                </a>
+                
+                <a href="shop.html?category=sheep" class="category-card">
+                    <div class="category-image">
+                        <img src="images/sheep-placeholder.jpg" alt="Sheep for Qurbani" loading="lazy">
+                    </div>
+                    <h3>Sheep</h3>
+                    <p>Kachhi • Lohi • Harnai</p>
+                    <span class="category-price">From PKR 40,000</span>
+                </a>
+                
+                <a href="shop.html?category=camels" class="category-card">
+                    <div class="category-image">
+                        <img src="images/camel-placeholder.jpg" alt="Camels for Qurbani" loading="lazy">
+                    </div>
+                    <h3>Camels</h3>
+                    <p>Dromedary (Bari Camel)</p>
+                    <span class="category-price">From PKR 300,000</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose-us">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose e-Qurbanify?</h2>
+                <p>Trust, transparency, and Islamic responsibility</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📹</div>
+                    <h3>Live Video Viewing</h3>
+                    <p>See your selected animal via video call before purchase. Complete transparency guaranteed.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">⚖️</div>
+                    <h3>Weight Guarantee</h3>
+                    <p>Accurate weight measurement with digital scales. No hidden surprises.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🕌</div>
+                    <h3>Shariah Compliance</h3>
+                    <p>Every animal meets Islamic age, health, and slaughter requirements.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🩺</div>
+                    <h3>Health Passport</h3>
+                    <p>Complete veterinary health certificate with vaccination records.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🔪</div>
+                    <h3>Hygienic Processing</h3>
+                    <p>Professional cutting and packing in clean, modern facilities.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">❤️</div>
+                    <h3>Charity Donation</h3>
+                    <p>Option to donate meat portions to deserving families.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Preview -->
+    <section class="how-it-works-preview">
+        <div class="container">
+            <div class="section-header">
+                <h2>Simple 5-Step Process</h2>
+                <p>Book your Qurbani in minutes</p>
+            </div>
+            
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Select Animal</h3>
+                    <p>Choose from verified livestock</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Verify Details</h3>
+                    <p>Check compliance & health</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Choose Service</h3>
+                    <p>Eid booking or immediate</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Slaughter/Delivery</h3>
+                    <p>Sunnah-compliant process</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <h3>Receive or Donate</h3>
+                    <p>Get meat or share charity</p>
+                </div>
+            </div>
+            
+            <div class="cta-center">
+                <a href="how-it-works.html" class="btn btn-primary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Trusted by Muslims Across Pakistan</h2>
+                <p>Alhamdulillah, serving the Ummah with excellence</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p>"Excellent service! The animal was exactly as shown in photos. Slaughter was done according to Sunnah. JazakAllah Khair!"</p>
+                    <div class="testimonial-author">
+                        <strong>Muhammad Ahmed</strong>
+                        <span>Karachi</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p>"Booked from Dubai for my family in Lahore. Video verification gave me peace of mind. Highly professional team."</p>
+                    <div class="testimonial-author">
+                        <strong>Fatima Siddiqui</strong>
+                        <span>UAE (for Lahore family)</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p>"Best Qurbani experience ever. Transparent pricing, healthy animal, and the meat distribution to poor was beautifully handled."</p>
+                    <div class="testimonial-author">
+                        <strong>Ali Hassan</strong>
+                        <span>Islamabad</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Book Your Qurbani?</h2>
+                <p>Join thousands of satisfied customers who trust e-Qurbanify</p>
+                <div class="cta-buttons">
+                    <a href="shop.html" class="btn btn-primary btn-large">Browse Animals Now</a>
+                    <a href="contact.html" class="btn btn-outline btn-large">Contact Support</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>e-Qurbanify</h3>
+                    <p>Pakistan's most trusted online Qurbani marketplace, serving the Muslim Ummah with integrity and Islamic values.</p>
+                    <div class="footer-social">
+                        <a href="https://wa.me/923006306577" target="_blank" aria-label="WhatsApp">📱 WhatsApp</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="shop.html">Shop Animals</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Customer Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="contact.html#faq">FAQ</a></li>
+                        <li><a href="#">Qurbani Rulings</a></li>
+                        <li><a href="#">Track Order</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li>📱 WhatsApp: +92 3006306577</li>
+                        <li>📞 Phone: +92 30063077</li>
+                        <li>📧 Email: info@e-qurbanify.pk</li>
+                        <li>🕒 Mon-Sun: 8AM - 10PM</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 e-Qurbanify. All rights reserved. | Made with ❤️ for the Muslim Ummah</p>
+                <div class="footer-badges">
+                    <span>🏅 100% Halal Certified</span>
+                    <span>🩺 Vet Verified</span>
+                    <span>📜 Shariah Compliant</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <div style="display: flex; gap: 10px; align-items: center;">
+                <button class="clear-cart-btn" id="clearCartBtn" title="Clear all items">🗑️ Clear</button>
+                <button class="close-cart" id="closeCart">&times;</button>
+            </div>
+        </div>
+        
+        <!-- Cart View (Screen 1) -->
+        <div class="cart-view" id="cartView">
+            <div class="cart-items" id="cartItems">
+                <p class="empty-cart">Your cart is empty</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cartTotal">PKR 0</span>
+                </div>
+                <button class="btn btn-primary btn-block" id="continueToPaymentBtn" style="display: none;">Continue to Payment</button>
+            </div>
+        </div>
+        
+        <!-- Payment View (Screen 2) -->
+        <div class="cart-payment-view" id="paymentView" style="display: none;">
+            <div class="payment-header">
+                <button class="back-to-cart-btn" onclick="showCartView()">← Back to Cart</button>
+                <h4>💳 Select Payment Method</h4>
+            </div>
+            <div class="payment-methods">
+                <label class="payment-option">
+                    <input type="radio" name="paymentMethod" value="bop" checked>
+                    <div class="payment-content">
+                        <span class="payment-icon">🏦</span>
+                        <span class="payment-name">Bank of Punjab</span>
+                    </div>
+                </label>
+                <label class="payment-option">
+                    <input type="radio" name="paymentMethod" value="jazzcash">
+                    <div class="payment-content">
+                        <span class="payment-icon">📱</span>
+                        <span class="payment-name">JazzCash</span>
+                    </div>
+                </label>
+                <label class="payment-option">
+                    <input type="radio" name="paymentMethod" value="easypaisa">
+                    <div class="payment-content">
+                        <span class="payment-icon">💳</span>
+                        <span class="payment-name">Easypaisa</span>
+                    </div>
+                </label>
+                <label class="payment-option">
+                    <input type="radio" name="paymentMethod" value="bank_transfer">
+                    <div class="payment-content">
+                        <span class="payment-icon">🏛️</span>
+                        <span class="payment-name">Bank Transfer</span>
+                    </div>
+                </label>
+                <label class="payment-option">
+                    <input type="radio" name="paymentMethod" value="cod">
+                    <div class="payment-content">
+                        <span class="payment-icon">💵</span>
+                        <span class="payment-name">Cash on Delivery</span>
+                    </div>
+                </label>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cartTotal2">PKR 0</span>
+                </div>
+                <button class="btn btn-primary btn-block" id="checkoutBtn" style="display: block;">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+</body>
+</html>
